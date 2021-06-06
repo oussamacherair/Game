@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+@import 'varibles';
+@import 'function';
+@import 'Rest';
+.wrapper
+{
+    height: 100vh;
+    background:url(../img/background.jpg)no-repeat center /cover,darken($color, 70);
+    box-shadow: inset 100rem 100rem 100rem 100rem rgba(black,.4)
+}   
+
+.Game-Grid
+{
+    &-Header
+    {
+        @include flex(flex,space-between,normal);
+        background: rgba($color,.4);
+        color: darken($color, 100);
+        padding: .5rem 2rem .5rem 2rem;
+        .Game-rounds
+        {
+            text-align: center;
+            .round-number
+            {
+                font-size: text(22px);
+                padding-bottom: 1rem ;
+            }
+             span 
+                {
+                    display: inline-block;
+                    border: 1px solid darken($color, 50); ;
+                    padding:  $padding;
+                }
+        }
+    }
+    /* Game Body */
+    &-Body
+    {
+        &-platform
+        {
+            width: 100%;
+            height: calc(100vh - 300px);
+            @include flex(flex,space-between,normal);
+            padding: $padding;
+            font-size: text(18px);
+                .player-1-grid, .player-0-grid
+                {
+                    flex: 0 0 33%;
+                    
+                }
+            .dice-Roller
+            {
+                align-self: center;
+            }
+        }
+        &-buttons
+        {
+            @include flex(flex,center,center);
+            padding: $padding;
+            flex-flow: column;
+            a 
+            {
+                padding: $btn-padding;
+                font-size: text(20px);
+                background: rgba($color,.4);
+
+                margin-bottom: 1rem;
+                @include ease;
+                &:hover
+                {
+                    background: rgba($color,.3);
+                    transform: scale(1.1);
+                }
+                
+            }
+
+        }
+    }
+
+}
+.won
+{
+    background: rgba($color,.4);
+    color: darken($color, 100);
+    padding: $padding;
+    margin: $padding 0;
+}

@@ -1,14 +1,15 @@
 {
-  "name": "project",
+  "name": "Project",
   "version": "1.0.0",
-  "description": "This is a game",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "Pig": "node-sass -w scss/ -o content/css/ --recursive"
   },
-  "author": "Oussama cherair",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "scss": "^0.2.4"
+    "node-sass": "^6.0.0"
   }
 }

@@ -1,0 +1,21 @@
+$secondary-color:#58a5f0;
+$primary-color:#004c8c;
+$color:#fff;
+
+@mixin flex ($display,$position-x,$position-y) {
+    display: $display;
+    justify-content: $position-x;
+    align-items: $position-y;
+}
+@mixin position($position,$Top,$Left,$content,$z-index) {
+    position: $position;
+    content: $content;
+    top: $Top;
+    left: $Left;
+    z-index: $z-index;
+}
+@mixin ease {
+    transition: all .3s ease;
+}
+$btn-padding: .5rem 1rem;
+$padding:.5rem;

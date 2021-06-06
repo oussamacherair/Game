@@ -1,0 +1,4 @@
+@function text($mytext,$default: 16px)
+{
+    @return ($mytext/$default) * 1rem;
+}

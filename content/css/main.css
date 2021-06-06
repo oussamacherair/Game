@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  color: white;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Nunito', sans-serif;
+  font-weight: lighter; }
+
+.wrapper {
+  height: 100vh;
+  background: url(../img/background.jpg) no-repeat center/cover, #4d4d4d;
+  box-shadow: inset 100rem 100rem 100rem 100rem rgba(0, 0, 0, 0.4); }
+
+.Game-Grid {
+  /* Game Body */ }
+  .Game-Grid-Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: normal;
+    background: rgba(255, 255, 255, 0.4);
+    color: black;
+    padding: .5rem 2rem .5rem 2rem; }
+    .Game-Grid-Header .Game-rounds {
+      text-align: center; }
+      .Game-Grid-Header .Game-rounds .round-number {
+        font-size: 1.375rem;
+        padding-bottom: 1rem; }
+      .Game-Grid-Header .Game-rounds span {
+        display: inline-block;
+        border: 1px solid gray;
+        padding: 0.5rem; }
+  .Game-Grid-Body-platform {
+    width: 100%;
+    height: calc(100vh - 300px);
+    display: flex;
+    justify-content: space-between;
+    align-items: normal;
+    padding: 0.5rem;
+    font-size: 1.125rem; }
+    .Game-Grid-Body-platform .player-1-grid, .Game-Grid-Body-platform .player-0-grid {
+      flex: 0 0 33%; }
+    .Game-Grid-Body-platform .dice-Roller {
+      align-self: center; }
+  .Game-Grid-Body-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    flex-flow: column; }
+    .Game-Grid-Body-buttons a {
+      padding: 0.5rem 1rem;
+      font-size: 1.25rem;
+      background: rgba(255, 255, 255, 0.4);
+      margin-bottom: 1rem;
+      transition: all .3s ease; }
+      .Game-Grid-Body-buttons a:hover {
+        background: rgba(255, 255, 255, 0.3);
+        transform: scale(1.1); }
+
+.won {
+  background: rgba(255, 255, 255, 0.4);
+  color: black;
+  padding: 0.5rem;
+  margin: 0.5rem 0; }

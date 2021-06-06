@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
     <title>Document</title>
 </head>
 
@@ -13,34 +14,49 @@
         <div class="Game-Grid">
             <!---Game header -->
             <div class="Game-Grid-Header">
-                <div class="Player-1">
-                    <h3 class="player-name">John</h3>
-                    <h4 class="scoore">33</h4>
-                    <h3 class="holding-scoore">100</h3>
+                <div class="Player-0">
+                    <h3 class="player-0-name">John</h3>
+                    <h4 class="player-0-scoore">00</h4>
+                    <h3 class="player-0-holding-scoore">00</h3>
                 </div>
                 <div class="Game-rounds">
-                    <h3 class="round-number">10</h3>
+                    <h3 class="round-number"> Rounds number 10</h3>
                     <h3>
-                        <span class="player-1-Won-round">1</span>
-                        <span class="player-2-Won-round">2</span>
+                        <span class="player-0-Won-round">0</span>
+                        <span class="player-1-Won-round">0</span>
                     </h3>
                 </div>
-                <div class="Player-2">
-                    <h3 class="player-name">John</h3>
-                    <h4 class="scoore">33</h4>
-                    <h3 class="holding-scoore">100</h3>
+                <div class="Player-1">
+                    <h3 class="player-1-name">John</h3>
+                    <h4 class="player-1-scoore">00</h4>
+                    <h3 class="player-1-holding-scoore">00</h3>
                 </div>
             </div>
             <!--Game body-->
             <div class="Game-Grid-Body">
-                <div class="player-1-grid"></div>
-                <div class="dice-Roller">
-                    <img src="./img/dice-3.png" alt="">
+                <div class="Game-Grid-Body-platform">
+                    <div class="player-0-grid">
+                        <ul>
+                            <li class="round-2-won">Rounds Won</li>
+                        </ul>
+                    </div>
+                    <div class="dice-Roller">  
+                        <img src="./img/dice-1.png" width="200" height="200" alt="">     
+                    </div>
+                    <div class="player-1-grid">
+                        <ul>
+                            <li class="round-2-won">Rounds Won</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="player-2-grid"></div>
+                <div class="Game-Grid-Body-buttons">
+                    <a href="###" class="btn btn-Start">Start Game</a>
+                    <a href="###" class="btn btn-Hold">Hold</a>
+                </div>
             </div>
         </div>
     </div>
+    <script src="js/myApp.js"></script>
 </body>
 
 </html>
